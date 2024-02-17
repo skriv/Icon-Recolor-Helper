@@ -13,7 +13,8 @@ function main() {
     // Check if the node is a container that can have children (e.g., frame, group, component)
     if ("children" in node) {
       // Filter out vector nodes (VECTOR type) from the children of the node
-      const vectorNodes = node.children.filter(child => child.type === "VECTOR");
+      const vectorNodes = node.children.filter(child => child.type === "VECTOR" || child.type === "GROUP");
+      // const vectorNodesAndGroups = node.children.filter(child => child.type === "VECTOR" || child.type === "GROUP");
 
       if (vectorNodes.length === 1) {
         // If there is only one vector node, create a duplicate and union it with the original
