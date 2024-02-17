@@ -1,0 +1,16 @@
+{
+  "name": "Icon Recolor Helper",
+  "id": "1340702717717220639",
+  "api": "1.0.0",
+  "main": "code.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "editorType": [
+    "figma"
+  ],
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  }
+}
